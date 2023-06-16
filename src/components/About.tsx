@@ -1,4 +1,5 @@
 import rooomie3 from '../assets/roomie3.jpg'
+import aboutImage from '../assets/aboutImage.png'
 
 const About = () => {
   return (
@@ -8,7 +9,7 @@ const About = () => {
         <p className="text-5xl font-bold text-yellow-logo text-center">somos?</p>
       </div>
       <div className="sm:flex ">
-        <img className="mt-5" src="/src/assets/aboutImage.png" />
+        <img className="mt-5" src={aboutImage} />
         <div className="p-5 sm:flex sm:flex-col sm:justify-center">
           <p className="text-xl  sm:text-2xl font-['DM Sans'] right-0 w-[250px] sm:w-3/4 mb-10 text-justify">
             RoomMatch no solo es una aplicación confiable sino un lugar donde sus integrantes confíen entre sí.
