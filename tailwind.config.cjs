@@ -10,10 +10,10 @@ module.exports = {
       },
 			backgroundImage: {
         'room': "url('/src/assets/room1.jpg')",
-        'roomie': "url('./src/assets/roomie-1.jpg')",
-        'bannerWeb': "url('./src/assets/banner-web.jpg')",
-        'roomie1': "url('./src/assets/room2.jpg')",
-        'room1': "url('./src/assets/room22.jpg')",
+        'roomie': "url('/src/assets/roomie-1.jpg')",
+        'bannerWeb': "url('/src/assets/banner-web.jpg')",
+        'roomie1': "url('/src/assets/room2.jpg')",
+        'room1': "url('/src/assets/room22.jpg')",
 				
       }
 		},
