@@ -1,7 +1,5 @@
 
-import {useRef, useState} from 'react'
-import { LateralMenu } from './LateralMenu';
-import foto from '../assets/roomie-1.jpg'
+import { useState } from 'react';
 
 interface typeInterface{
   type : 'roomie' | 'bedroom' | null

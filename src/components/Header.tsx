@@ -1,9 +1,10 @@
 import logo from '../assets/logo.png'
 import {useState} from 'react'
-import {AiOutlineMenu} from 'react-icons/ai'
+import pkg from 'react-icons/ai/index'
 
 const Header = () => {
 
+  const { AiOutlineMenu } = pkg
   const [ isActive, setIsActive] = useState<boolean>(false)
 
 return(
