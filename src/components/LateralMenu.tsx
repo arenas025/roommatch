@@ -17,7 +17,7 @@ export const LateralMenu = ({setClose}:LateralMenuInterface) => {
       <div className=' bg-white w-2/3 absolute right-0 top-0 h-screen z-30'>
         <div className='h-14 flex items-center justify-end pr-3 bg-slate-200'>
         <AiOutlineClose onClick={()=>{
-          setClose(true)
+          setClose(false)
         }} size={25}/>
         </div>
         <div className='h-4/5 w-full flex flex-col gap-10 pt-7 items-end'>

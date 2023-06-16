@@ -6,7 +6,8 @@ module.exports = {
 		extend: {
 			colors: {
         'yellow-logo': '#fcb75e',
-				'red-logo':'#d6587f'
+				'red-logo':'#d6587f',
+				'purple-logo':'#592acd'
       },
 			backgroundImage: {
         'room': "url('/src/assets/room1.jpg')",
