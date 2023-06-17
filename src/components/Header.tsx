@@ -11,7 +11,9 @@ const Header = () => {
 return(
   <div className="bg-slate-200 w-full h-14 flex align-middle justify-between items-center pl-6 pr-6">
     <div className='flex items-center'>
+      <a href="/">
       <img src={logo} className="w-10 h-8"/>
+      </a>
       <p>RoomMatch</p>
     </div>
     <AiOutlineMenu className='sm:hidden' onClick={()=>{

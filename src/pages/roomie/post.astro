@@ -1,0 +1,9 @@
+---
+import Header from '../../components/Header.jsx';
+import PostRoomie from '../../components/PostRoomie.jsx';
+import Layout from '../../layouts/Layout.astro'; 
+---
+<Layout title='Roommatch'>
+		<Header client:only/>
+		<PostRoomie client:only/>
+</Layout>

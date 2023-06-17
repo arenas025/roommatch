@@ -21,8 +21,8 @@ export const LateralMenu = ({setClose}:LateralMenuInterface) => {
         }} size={25}/>
         </div>
         <div className='h-4/5 w-full flex flex-col gap-10 pt-7 items-end'>
-        <LateralMenuItem name='Nosotros' route='' Icon={RiTeamFill} />
-        <LateralMenuItem name='Preguntas frecuentes' route='' Icon={BsQuestionLg} />
+        <LateralMenuItem name='Nosotros' route='about' Icon={RiTeamFill} />
+        <LateralMenuItem name='Preguntas frecuentes' route='about' Icon={BsQuestionLg} />
         <LateralMenuItem name='Descarga la app' route='' Icon={ BiDownload} />
         {/* <LateralMenuItem name='asa' route='' /> */}
         </div>
