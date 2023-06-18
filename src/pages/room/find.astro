@@ -1,9 +1,9 @@
 ---
+import { FindRoom } from '../../components/FindRoom';
 import Header from '../../components/Header.jsx';
-import PostRoom  from '../../components/PostRoom.jsx';
 import Layout from '../../layouts/Layout.astro';
 ---
 <Layout title='Roommatch'>
 		<Header client:only/>
-		<PostRoom client:only/>
+		<FindRoom client:only/>
 </Layout>

@@ -28,7 +28,7 @@ const pdStyle = 'font-bold text-center text-white text-2xl'
 
 
   return (
-    <div className="flex items-center justify-center">
+    <div className="flex items-center mt-10 justify-center">
       <div className="w-2/4">
       <div className={`${dStyle} bg-red-logo`}>
         <p className={`${pdStyle}`}>
@@ -37,7 +37,7 @@ const pdStyle = 'font-bold text-center text-white text-2xl'
       </div>
       <form id='form'>
         <div>
-          <div className={`${dStyle} bg-slate-200`}>
+          <div className={`${dStyle} bg-slate-200 mt-10`}>
             <p className='text-left text-2xl'>
               Tus datos
             </p>
@@ -47,19 +47,19 @@ const pdStyle = 'font-bold text-center text-white text-2xl'
               <label className="text-xl">
                 Tu nombre completo 
               </label>
-              <input name="name" className={`${iStyle}`} type='text'/>
+              <input name="name" className={`${iStyle} ml-28`} type='text'/>
             </div>
             <div className="flex">
               <label className="text-xl">
                 Tu edad
               </label>
-              <input name='age' className={`${iStyle}`} type="number"/>
+              <input name='age' className={`${iStyle} ml-56`} type="number"/>
             </div>
             <div>
               <label className="text-xl">
                 ¿Cual es tu genero?
               </label>
-              <select className={`${iStyle}`} name="gender">
+              <select className={`${iStyle} ml-28`} name="gender">
                 <option value="mujer">Mujer</option>
                 <option value="hombre">Hombre</option>
                 <option value="otro">Otro</option>
@@ -69,7 +69,7 @@ const pdStyle = 'font-bold text-center text-white text-2xl'
               <label className="text-xl">
                 Ciudad en la que planeas vivir
               </label>
-              <select name="city" className={`${iStyle}`} defaultValue={''}>
+              <select name="city" className={`${iStyle} ml-8`} defaultValue={''}>
                 <option value="bogota">Bogotá</option>
                 <option value="ibague">Cali</option>
                 <option value="medellin">Medellin</option>
@@ -79,7 +79,7 @@ const pdStyle = 'font-bold text-center text-white text-2xl'
               <label className="text-xl">
                 Cuentanos tus hobbies
               </label>
-              <input name="hoobies" className={`${iStyle}`} type="text" />
+              <textarea name="hoobies" className={`${iStyle}`}/>
             </div>
           </div>
         </div>
@@ -93,7 +93,7 @@ const pdStyle = 'font-bold text-center text-white text-2xl'
             <label className="text-xl">
               Numero de personas
             </label>
-            <select className={`${iStyle}`} name="roomies">
+            <select className={`${iStyle} ml-5`} name="roomies">
               <option value="0">0</option>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -108,33 +108,41 @@ const pdStyle = 'font-bold text-center text-white text-2xl'
               ¿Qué tipo de persona buscas?
             </p>
           </div>
-          <label className="text-xl">
-            Rango de edad
-          </label>
-          <select name="ageroomie" className={`${iStyle}`}>
-            <option value="18-25">18-25</option>
-            <option value="25-30">25-30</option>
-            <option value="30-35">30-35</option>
-            <option value="+40">+40</option>
-          </select>
-          <label className="text-xl">
-            Genero de preferencia
-          </label>
-          <select name="gender" className={`${iStyle}`}>
-            <option value="mujer">Mujer</option>
-            <option value="hombre">Hombre</option>
-            <option value="cualquiera">Cualquiera</option>
-          </select>
-          <label className="text-xl">
-            Aceptas mascotas?
-          </label>
-          <select name="vets" className={`${iStyle}`}>
-            <option value="no">Si</option>
-            <option value="yes">No</option>
-          </select>
+          <div className=" flex flex-col pb-5 pt-5 gap-5">
+            <div className="flex items-center">
+              <label className="text-xl">
+                Rango de edad
+              </label>
+              <select name="ageroomie" className={`${iStyle} ml-20`}>
+                <option value="18-25">18-25</option>
+                <option value="25-30">25-30</option>
+                <option value="30-35">30-35</option>
+                <option value="+40">+40</option>
+              </select>
+            </div>
+            <div >
+              <label className="text-xl">
+                Genero de preferencia
+              </label>
+              <select name="gender" className={`${iStyle} ml-5`}>
+                <option value="mujer">Mujer</option>
+                <option value="hombre">Hombre</option>
+                <option value="cualquiera">Cualquiera</option>
+              </select>
+            </div>
+            <div >
+              <label className="text-xl">
+                Aceptas mascotas?
+              </label>
+              <select name="vets" className={`${iStyle} ml-12`}>
+                <option value="no">Si</option>
+                <option value="yes">No</option>
+              </select>
+            </div>
+          </div>
         </div>
       </form>      
-      <ButtonComponent onClick={handleSubmit} text="Aceptar" />
+      <ButtonComponent onClick={handleSubmit} className="w-56 ml-auto mr-auto mt-10" text="Aceptar" />
       </div>
     </div>
   )
