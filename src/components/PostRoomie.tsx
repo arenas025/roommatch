@@ -17,6 +17,8 @@ const PostRoomie = () => {
 
   if((name && age && hoobies) === null){
       alert('Complete todos los campos')
+    }else {
+      alert('Información enviada. En los proximos dias se te enviara un correo para que subas tus fotos por motivos de seguridad')
     }
 }
 
@@ -142,7 +144,7 @@ const pdStyle = 'font-bold text-center text-white text-2xl'
           </div>
         </div>
       </form>      
-      <ButtonComponent onClick={handleSubmit} className="w-56 ml-auto mr-auto mt-10" text="Aceptar" />
+      <ButtonComponent onClick={handleSubmit} className="w-44 mb-10 ml-auto mr-auto mt-10" text="Aceptar" />
       </div>
     </div>
   )

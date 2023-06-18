@@ -18,6 +18,8 @@ const PostRoom = () => {
 
   if((name && email && phone) === null){
       alert('Complete todos los campos')
+    }else{
+      alert('Información enviada. En los proximos dias se te enviara un correo para que subas las fotos de tu vivienda')
     }
 }
 
@@ -118,7 +120,7 @@ const iStyle = 'border-2  p-2 rounded-lg border-slate-200 w-2/4'
           </div>
       </form>
       </div>
-      <ButtonComponent className="w-56 ml-auto mr-auto mt-10" onClick={handleSubmit} text="Aceptar" />
+      <ButtonComponent className="w-44 mb-10 ml-auto mr-auto mt-10" onClick={handleSubmit} text="Aceptar" />
       </div> 
     </div>
   )

@@ -1,0 +1,9 @@
+---
+import { FindRoomie } from '../../components/FindRoomie';
+import Header from '../../components/Header.jsx';
+import Layout from '../../layouts/Layout.astro';
+---
+<Layout title='Roommatch'>
+		<Header client:only/>
+		<FindRoomie client:only/>
+</Layout>

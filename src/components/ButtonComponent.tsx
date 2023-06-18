@@ -13,7 +13,7 @@ interface buttonRouteComponentInterface {
 
 export const ButtonComponent = ({text,onClick, className}:buttonComponentInterface) => {
   return (
-    <div className={` w-3/5 h-10 bg-yellow-logo z-10 flex items-center justify-center rounded-3xl ${className}`} onClick={onClick} >
+    <div className={` w-3/5 h-10 bg-yellow-logo z-10 flex items-center justify-center hover:cursor-pointer rounded-3xl ${className}`} onClick={onClick} >
       <p className="text-base">{text}</p>
     </div>
   );
@@ -21,7 +21,7 @@ export const ButtonComponent = ({text,onClick, className}:buttonComponentInterfa
 
 export const ButtonComponentSmall = ({text,onClick, className}:buttonComponentInterface) => {
   return (
-    <div className={` bg-yellow-logo z-10 flex items-center justify-center rounded-3xl ${className}`} onClick={onClick} >
+    <div className={` bg-yellow-logo z-10 flex items-center justify-center hover:cursor-pointer rounded-3xl ${className}`} onClick={onClick} >
       <p className="text-base">{text}</p>
     </div>
   );
@@ -29,7 +29,7 @@ export const ButtonComponentSmall = ({text,onClick, className}:buttonComponentIn
 
 export const ButtonRouteComponent = ({text,route,className, classNameP}:buttonRouteComponentInterface) => {
   return (
-    <a className= {` ${className} w-3/5 flex items-center justify-center h-10 bg-yellow-logo z-10 rounded-3xl`} href={`/${route}`}>
+    <a className= {` ${className} w-3/5 flex items-center justify-center h-10 bg-yellow-logo z-10 rounded-3xl hover:cursor-pointer`} href={`/${route}`}>
       <div className="flex items-center justify-center" >
         <p className={`font-bold text-base ${classNameP}`}>{text}</p>
       </div>
