@@ -28,8 +28,8 @@ const [type, setType] = useState<typeInterface>({
         <p
           className={
             type.type === "roomie"
-              ? " text-sm sm:text-lg border-b-2 text-white border-white font-bold transition-all duration-100 z-10"
-              : "text-sm sm:text-lg text-white"
+              ? " text-sm sm:text-lg cursor-pointer border-b-2 text-white border-white font-bold transition-all duration-100 z-10"
+              : "text-sm sm:text-lg text-white cursor-pointer"
           }
           onClick={() => {
             setType({ type: "roomie" });
@@ -40,8 +40,8 @@ const [type, setType] = useState<typeInterface>({
         <p
           className={
             type.type === "bedroom"
-              ? " text-sm sm:text-lg text-white border-b-2 border-white font-bold transition-all duration-100 z-10 "
-              : "text-sm sm:text-lg z-10 text-white"
+              ? " text-sm sm:text-lg cursor-pointer text-white border-b-2 border-white font-bold transition-all duration-100 z-10 "
+              : "text-sm sm:text-lg cursor-pointer z-10 text-white"
           }
           onClick={() => {
             setType({ type: "bedroom" });
