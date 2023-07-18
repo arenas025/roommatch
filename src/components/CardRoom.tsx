@@ -28,7 +28,7 @@ export const CardRoom = ({
   const [value, setValue] = useState<string>("");
 
   return (
-    <div className="w-[90vw] relative bg-slate-200 h-[70vh] p-5 rounded-xl lg:h-[500px] lg:w-[500px]">
+    <div className="w-[90vw] relative bg-slate-200 h-[75vh] p-5 rounded-xl lg:h-[500px] lg:w-[500px]">
       <div className="flex align-top">
         <img
           alt="imagen de pieza de referencia"
