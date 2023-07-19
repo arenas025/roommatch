@@ -24,7 +24,7 @@ export const FindCard = ({
   const [value, setValue] = useState<string>("");
 
   return (
-    <div className="w-[90vw] h-[75vh] lg:w-[500px] relative bg-slate-200 lg:h-[500px] bg-red p-5 rounded-xl">
+    <div className="w-[90vw] relative bg-slate-200 h-[45rem] p-5 rounded-xl lg:h-[600px] lg:w-[500px]">
       <div className="flex align-top">
         <img
           alt="imagen de pieza de referencia"

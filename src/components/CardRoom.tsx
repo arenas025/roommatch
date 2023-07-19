@@ -63,13 +63,13 @@ export const CardRoom = ({
       <p className="mt-3 ">{description}</p>
       {like ? (
         <AiFillHeart
-          className="mt-10 h-10 w-10 text-red-600 lg:static"
+          className="m-auto lg:mt-10 h-10 w-10 text-red-600 lg:static"
           onClick={() => setlike(false)}
           size={20}
         />
       ) : (
         <AiOutlineHeart
-          className="mt-10 h-10 w-10 lg:static lg:h-8 lg:w-8"
+          className=" m-auto lg:mt-10  h-10 w-10 lg:static lg:h-8 lg:w-8"
           onClick={() => setlike(true)}
           size={20}
         />
