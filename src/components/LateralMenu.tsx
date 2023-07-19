@@ -1,8 +1,9 @@
-import { LateralMenuItem } from "./LateralMenuItem";
 import { AiOutlineClose } from "react-icons/ai";
-import { BiDownload } from "react-icons/bi";
-import { BsQuestionLg } from "react-icons/bs";
-import { RiTeamFill } from "react-icons/ri";
+import { BsFillPersonPlusFill } from 'react-icons/bs';
+import { IoIosPeople } from 'react-icons/io';
+import { MdMeetingRoom, MdPersonSearch } from "react-icons/md";
+import { RiPhoneFindLine } from 'react-icons/ri';
+import { LateralMenuItem } from "./LateralMenuItem";
 
 interface LateralMenuInterface {
   setClose: React.Dispatch<React.SetStateAction<boolean>>;
@@ -20,15 +21,37 @@ export const LateralMenu = ({ setClose }: LateralMenuInterface) => {
             size={25}
           />
         </div>
-        <div className="h-4/5 w-full pr-4 flex flex-col gap-10 pt-7 items-end">
-          <LateralMenuItem name="Nosotros" route="about" Icon={RiTeamFill} />
+        <div className="h-4/5 w-full flex flex-col gap-10 pt-7 items-end">
           <LateralMenuItem
-            name="Preguntas frecuentes"
+            backgroundColor="yellow-logo"
+            name="Quienes somos"
             route="about"
-            Icon={BsQuestionLg}
+            Icon={IoIosPeople}
           />
-          <LateralMenuItem name="Descarga la app" route="" Icon={BiDownload} />
-          {/* <LateralMenuItem name='asa' route='' /> */}
+          <LateralMenuItem
+            backgroundColor="red-logo"
+            name="Publica tu habitación"
+            route="room/post"
+            Icon={MdMeetingRoom}
+          />
+          <LateralMenuItem
+            backgroundColor="red-logo"
+            name="Busca tu habitación"
+            route="room/find"
+            Icon={RiPhoneFindLine}
+          />
+          <LateralMenuItem
+            backgroundColor="red-logo"
+            name="Postulate como roomie"
+            route="roomie/post"
+            Icon={BsFillPersonPlusFill}
+          />
+          <LateralMenuItem
+            backgroundColor="red-logo"
+            name="Busca tu roomie"
+            route="room/find"
+            Icon={MdPersonSearch}
+          />
         </div>
       </div>
     </div>

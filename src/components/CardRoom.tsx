@@ -28,7 +28,7 @@ export const CardRoom = ({
   const [value, setValue] = useState<string>("");
 
   return (
-    <div className="w-[90vw] relative bg-slate-200 h-[75vh] p-5 rounded-xl lg:h-[500px] lg:w-[500px]">
+    <div className="w-[90vw] relative bg-slate-200 h-[70vh]  p-5 rounded-xl lg:h-[500px] lg:w-[500px]">
       <div className="flex align-top">
         <img
           alt="imagen de pieza de referencia"
@@ -75,7 +75,7 @@ export const CardRoom = ({
       </div>
       <p className="mt-3 ">{description}</p>
       {like && (
-        <div className="absolute h-10 rounded-lg justify-around -bottom-12 left-0 rounded-tl-none gap-2 bg-slate-200 w-80 flex p-2">
+        <div className="absolute h-10 rounded-lg justify-around -bottom-8 left-0 rounded-tl-none gap-2 bg-slate-200 w-80 flex p-2">
           <label>Tu celular</label>
           <input
             type="number"
