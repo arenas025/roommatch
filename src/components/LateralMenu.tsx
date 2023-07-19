@@ -49,7 +49,7 @@ export const LateralMenu = ({ setClose }: LateralMenuInterface) => {
           <LateralMenuItem
             backgroundColor="red-logo"
             name="Busca tu roomie"
-            route="room/find"
+            route="roomie/find"
             Icon={MdPersonSearch}
           />
         </div>
